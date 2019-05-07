@@ -119,7 +119,7 @@
 						<input type="password" class="form-control" name="password" placeholder="Password" required="required">	
 					</div>        
 					<div class="form-group">
-						<a href="login.php"><button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
+						<a href="login.php"><button type="submit" class="btn btn-primary btn-lg btn-block login-btn" name="login">Login</button>
 					</div>
 				</form>
 			</div>
