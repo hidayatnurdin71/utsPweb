@@ -1,3 +1,14 @@
+<?php 
+	if(isset($_GET['pesan'])){
+		if($_GET['pesan'] == "gagal"){
+			echo "Login gagal! username dan password salah!";
+		}else if($_GET['pesan'] == "logout"){
+			echo "<h3>Anda telah berhasil logout</h3>";
+		}else if($_GET['pesan'] == "belum_login"){
+			echo "Anda harus login untuk mengakses halaman admin";
+		}
+	}
+	?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -111,7 +122,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 			</div>
 			<div class="modal-body">
-				<form action="/examples/actions/confirmation.php" method="post">
+				<form action="login.php" method="post">
 					<div class="form-group">
 						<input type="text" class="form-control" name="username" placeholder="Username" required="required">		
 					</div>
@@ -119,7 +130,7 @@
 						<input type="password" class="form-control" name="password" placeholder="Password" required="required">	
 					</div>        
 					<div class="form-group">
-						<a href="login.php"><button type="submit" class="btn btn-primary btn-lg btn-block login-btn" name="login">Login</button>
+						<button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
 					</div>
 				</form>
 			</div>

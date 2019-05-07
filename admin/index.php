@@ -9,14 +9,16 @@ session_start();
 if($_SESSION['status'] !="login"){
 	header("location:../login/index.php");
 }
- 
-// menampilkan pesan selamat datang
-echo "Hai, selamat datang ". $_SESSION['username'];
- 
-?>
-<br/>
-<br/>
-
+ //login_success.php   
+ if(isset($_SESSION["username"]))  
+ {  
+      echo '<h3>Login Success, Welcome - '.$_SESSION["username"].'</h3>';   
+ }  
+ else  
+ {  
+      header("location:../login/index.php");  
+ }  
+ ?> 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -175,7 +177,7 @@ $(document).ready(function(){
     <div class="container">
     
         <div class="table-wrapper">
-        <a href="../login/index.php"><button type="button" class="btn btn-danger"></i>Logout</button></a>
+        <a href="../login/logout.php"><button type="button" class="btn btn-danger"></i>Logout</button></a>
             <div class="table-title">
             
                 <div class="row">
