@@ -24,7 +24,7 @@
 	}	
 	.navbar {
 		color: #fff;
-		background: #926dde;
+		background: #20b2aa;
 		padding: 5px 16px;
 		border-radius: 0;
 		border: none;
@@ -208,21 +208,10 @@
 			</div>
 		</form>
 		<ul class="nav navbar-nav navbar-right ml-auto">
-			<li class="nav-item active"><a href="#" class="nav-link"><i class="fa fa-home"></i><span>Home</span></a></li>
-			<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-gears"></i><span>Projects</span></a></li>
+			<li class="nav-item"><a href="../UTS_WEB/admin/index.php" class="nav-link"><i class="fa fa-gears"></i><span>Admin</span></a></li>
 			<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-users"></i><span>Team</span></a></li>
-			<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-pie-chart"></i><span>Reports</span></a></li>
-			<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-briefcase"></i><span>Careers</span></a></li>
-			<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-envelope"></i><span>Messages</span></a></li>		
-			<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-bell"></i><span>Notifications</span></a></li>
+            <li class="nav-item"><a href="../UTS_WEB/login/logout.php" class="nav-link"><i class="fa fa-sign-out"></i><span>Logout</span></a></li>
 			<li class="nav-item dropdown">
-				<a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="../img/avatar.png" class="avatar" alt="Avatar"> Menu <b class="caret"></b></a>
-				<ul class="dropdown-menu">
-					<li><a href="#" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a></li>
-					<li><a href="#" class="dropdown-item"><i class="fa fa-calendar-o"></i> Calendar</a></li>
-					<li><a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a></li>
-					<li class="divider dropdown-divider"></li>
-					<li><a href="#" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a></li>
 				</ul>
 			</li>
 		</ul>

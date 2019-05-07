@@ -1,9 +1,6 @@
 use utsweb;
 
 insert into tbl_user values 
-('admin','1234');
-
-insert into tbl_user values 
-('adminn','abc');
+('admin','asdf');
 
 SELECT*FROM tbl_user;
